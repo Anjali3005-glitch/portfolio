@@ -1,225 +1,1743 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+<head>
 
-    <meta
-      name="description"
-      content="Anjali — Computer Science student, AI enthusiast and developer."
-    />
+  <meta charset="UTF-8" />
 
-    <meta name="theme-color" content="#050505" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <title>Anjali — Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Anjali — Computer Science student, AI enthusiast and developer."
+  />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta
+    name="theme-color"
+    content="#050505"
+  />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <title>
+    Anjali — Developer Portfolio
+  </title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <!-- =========================================
-         CUSTOM CURSOR
-    ========================================== -->
+  <!-- ==================================================
+       FONTS
+  =================================================== -->
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
 
-    <!-- =========================================
-         GRAIN OVERLAY
-    ========================================== -->
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
 
-    <div class="grain"></div>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
 
-    <!-- =========================================
-         NAVIGATION
-    ========================================== -->
 
-    <header class="navbar">
-      <a href="#home" class="logo magnetic">
-        A<span>.</span>
+  <!-- ==================================================
+       CSS
+  =================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="./css/style.css"
+  />
+
+</head>
+
+
+<body>
+
+
+  <!-- ==================================================
+       LOADER
+  =================================================== -->
+
+  <div
+    class="loader"
+    id="loader"
+  >
+
+    <div class="loader-top">
+
+      <span>
+        PORTFOLIO / 2026
+      </span>
+
+      <span>
+        INITIALIZING
+      </span>
+
+    </div>
+
+
+    <div class="loader-center">
+
+      <div class="loader-number">
+
+        <span id="loaderCounter">
+          00
+        </span>
+
+        <span class="loader-percent">
+          %
+        </span>
+
+      </div>
+
+
+      <div class="loader-name">
+        ANJALI
+      </div>
+
+    </div>
+
+
+    <div class="loader-bottom">
+
+      <div class="loader-line">
+
+        <span id="loaderProgress"></span>
+
+      </div>
+
+
+      <div class="loader-status">
+
+        <span id="loaderStatus">
+          LOADING EXPERIENCE...
+        </span>
+
+        <span>
+          PLEASE WAIT
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==================================================
+       CURSOR
+  =================================================== -->
+
+  <div class="cursor-dot"></div>
+
+  <div class="cursor-outline"></div>
+
+
+  <!-- ==================================================
+       GRAIN
+  =================================================== -->
+
+  <div class="grain"></div>
+
+
+  <!-- ==================================================
+       MOUSE LIGHT
+  =================================================== -->
+
+  <div class="mouse-light"></div>
+
+
+  <!-- ==================================================
+       NAVBAR
+  =================================================== -->
+
+  <header class="navbar">
+
+    <a
+      href="#home"
+      class="logo magnetic"
+    >
+      A<span>.</span>
+    </a>
+
+
+    <nav class="desktop-nav">
+
+      <a
+        href="#about"
+        class="nav-link"
+      >
+        <span>01</span>
+        ABOUT
       </a>
 
-      <nav class="nav-links">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
 
-      <button class="menu-button magnetic" aria-label="Open menu">
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+      <a
+        href="#journey"
+        class="nav-link"
+      >
+        <span>02</span>
+        JOURNEY
+      </a>
 
-    <!-- =========================================
-         MAIN
-    ========================================== -->
 
-    <main>
-      <!-- =======================================
-           HERO
-      ======================================== -->
+      <a
+        href="#skills"
+        class="nav-link"
+      >
+        <span>03</span>
+        SKILLS
+      </a>
 
-      <section class="hero" id="home">
-        <div class="hero-top">
-          <p class="eyebrow reveal">
-            COMPUTER SCIENCE × AI × DEVELOPMENT
+
+      <a
+        href="#projects"
+        class="nav-link"
+      >
+        <span>04</span>
+        WORK
+      </a>
+
+
+      <a
+        href="#contact"
+        class="nav-link"
+      >
+        <span>05</span>
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <button
+      class="menu-button magnetic"
+      id="menuButton"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </header>
+
+
+  <!-- ==================================================
+       MOBILE MENU
+  =================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <div class="mobile-menu-top">
+
+      <span>
+        NAVIGATION
+      </span>
+
+      <span>
+        MENU / 01
+      </span>
+
+    </div>
+
+
+    <nav class="mobile-nav">
+
+      <a
+        href="#home"
+        class="mobile-nav-link"
+      >
+        <span>00</span>
+        HOME
+      </a>
+
+
+      <a
+        href="#about"
+        class="mobile-nav-link"
+      >
+        <span>01</span>
+        ABOUT
+      </a>
+
+
+      <a
+        href="#journey"
+        class="mobile-nav-link"
+      >
+        <span>02</span>
+        JOURNEY
+      </a>
+
+
+      <a
+        href="#skills"
+        class="mobile-nav-link"
+      >
+        <span>03</span>
+        SKILLS
+      </a>
+
+
+      <a
+        href="#projects"
+        class="mobile-nav-link"
+      >
+        <span>04</span>
+        WORK
+      </a>
+
+
+      <a
+        href="#contact"
+        class="mobile-nav-link"
+      >
+        <span>05</span>
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <div class="mobile-menu-bottom">
+
+      <span>
+        COMPUTER SCIENCE × AI
+      </span>
+
+      <span>
+        2026
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==================================================
+       MAIN
+  =================================================== -->
+
+  <main>
+
+
+    <!-- ==================================================
+         HERO
+    =================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-grid"></div>
+
+
+      <div class="hero-top">
+
+        <div class="hero-intro reveal-element">
+
+          <span class="mono-label">
+            COMPUTER SCIENCE
+          </span>
+
+          <span class="mono-label">
+            AI / DEVELOPMENT
+          </span>
+
+        </div>
+
+
+        <div class="hero-year reveal-element">
+          2026
+        </div>
+
+      </div>
+
+
+      <div class="hero-main">
+
+        <div class="hero-location reveal-element">
+
+          <span class="status-dot"></span>
+
+          <span>
+            AVAILABLE TO BUILD
+          </span>
+
+        </div>
+
+
+        <h1
+          class="hero-title"
+          aria-label="Anjali Developer"
+        >
+
+          <span class="hero-title-line">
+
+            <span class="hero-word hero-word-fill">
+              ANJALI
+            </span>
+
+          </span>
+
+
+          <span
+            class="hero-title-line hero-title-second"
+          >
+
+            <span
+              class="hero-word hero-word-outline"
+            >
+              DEVELOPER
+            </span>
+
+          </span>
+
+        </h1>
+
+
+        <div class="hero-bottom">
+
+          <p class="hero-description reveal-element">
+
+            I build digital experiences where
+
+            <strong>
+              technology
+            </strong>,
+
+            <strong>
+              AI
+            </strong>
+
+            and
+
+            <strong>
+              creativity
+            </strong>
+
+            come together.
+
           </p>
 
-          <p class="hero-year reveal">2026</p>
-        </div>
-
-        <div class="hero-content">
-          <div class="hero-title-wrapper">
-            <h1 class="hero-title">
-              <span class="title-line reveal-text">ANJALI</span>
-              <span class="title-line title-outline reveal-text">
-                DEVELOPER
-              </span>
-            </h1>
-          </div>
-
-          <div class="hero-bottom">
-            <p class="hero-description reveal">
-              I build thoughtful digital experiences where
-              <span>technology</span>, <span>AI</span> and
-              <span>creativity</span> meet.
-            </p>
-
-            <a href="#about" class="explore-button magnetic">
-              <span>EXPLORE</span>
-              <span class="arrow">↘</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Scroll indicator -->
-
-        <div class="scroll-indicator">
-          <span class="scroll-line"></span>
-          <span>SCROLL TO EXPLORE</span>
-        </div>
-
-        <!-- Decorative number -->
-
-        <div class="hero-number">
-          01
-        </div>
-      </section>
-
-      <!-- =======================================
-           ABOUT PREVIEW
-      ======================================== -->
-
-      <section class="about-preview" id="about">
-        <div class="section-label">
-          <span>01</span>
-          <span>WHO AM I?</span>
-        </div>
-
-        <div class="about-grid">
-          <h2>
-            NOT JUST
-            <br />
-            <span>ANOTHER</span>
-            <br />
-            PORTFOLIO.
-          </h2>
-
-          <div class="about-text">
-            <p>
-              I'm a Computer Science student exploring AI,
-              software development and creative digital
-              experiences.
-            </p>
-
-            <p class="muted">
-              This portfolio is a small window into the things
-              I'm learning, building and experimenting with.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- =======================================
-           PROJECT PLACEHOLDER
-      ======================================== -->
-
-      <section class="projects-preview" id="projects">
-        <div class="section-label">
-          <span>02</span>
-          <span>SELECTED WORK</span>
-        </div>
-
-        <div class="project-placeholder">
-          <div>
-            <span class="project-number">PROJECT 01</span>
-
-            <h2>AI WAREHOUSE</h2>
-
-            <p>
-              Computer Vision · AI · Digital Twin
-            </p>
-          </div>
-
-          <span class="project-arrow">↗</span>
-        </div>
-      </section>
-
-      <!-- =======================================
-           CONTACT PLACEHOLDER
-      ======================================== -->
-
-      <section class="contact-preview" id="contact">
-        <div class="section-label">
-          <span>03</span>
-          <span>CONTACT</span>
-        </div>
-
-        <div class="contact-content">
-          <p>HAVE AN IDEA?</p>
-
-          <h2>
-            LET'S
-            <br />
-            <span>BUILD.</span>
-          </h2>
 
           <a
-            href="mailto:hello@example.com"
-            class="contact-link magnetic"
+            href="#about"
+            class="explore-button magnetic reveal-element"
           >
-            GET IN TOUCH ↗
+
+            <span>
+              EXPLORE
+            </span>
+
+            <span class="explore-arrow">
+              ↓
+            </span>
+
           </a>
+
         </div>
-      </section>
-    </main>
 
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
+      </div>
 
-    <footer class="footer">
-      <span>© 2026 ANJALI</span>
 
-      <span>BUILT WITH CODE + CURIOSITY</span>
-    </footer>
+      <div class="hero-footer">
 
-    <!-- JavaScript -->
-    <script src="./js/script.js"></script>
-  </body>
+        <div class="scroll-indicator">
+
+          <span class="scroll-line">
+            <span></span>
+          </span>
+
+          <span>
+            SCROLL TO EXPLORE
+          </span>
+
+        </div>
+
+
+        <div class="hero-index">
+
+          <span>
+            INDEX
+          </span>
+
+          <span>
+            01 / 05
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         ABOUT
+    =================================================== -->
+
+    <section
+      class="about-preview"
+      id="about"
+    >
+
+      <div class="section-header">
+
+        <span>
+          01
+        </span>
+
+        <span>
+          ABOUT ME
+        </span>
+
+      </div>
+
+
+      <div class="about-intro">
+
+        <div class="about-intro-label">
+
+          <span>
+            THE PERSON
+          </span>
+
+          <span>
+            BEHIND THE CODE
+          </span>
+
+        </div>
+
+
+        <h2 class="about-heading">
+
+          <span class="about-heading-line">
+            CURIOUS
+          </span>
+
+          <span class="about-heading-outline">
+            BY NATURE.
+          </span>
+
+          <span class="about-heading-line">
+            BUILDER
+          </span>
+
+          <span class="about-heading-outline">
+            BY CHOICE.
+          </span>
+
+        </h2>
+
+      </div>
+
+
+      <div class="about-description-grid">
+
+        <div class="about-description-number">
+          01 / 04
+        </div>
+
+
+        <div class="about-description">
+
+          <p class="about-lead">
+
+            I'm a Computer Science student exploring
+            the intersection of artificial intelligence,
+            software development and creative digital
+            experiences.
+
+          </p>
+
+
+          <p class="about-muted">
+
+            I enjoy taking an idea from a simple thought
+            to a working product — learning the technology
+            behind it, designing the experience and
+            continuously improving the result.
+
+          </p>
+
+
+          <a
+            href="#projects"
+            class="text-link magnetic"
+          >
+
+            EXPLORE MY WORK
+
+            <span>
+              ↗
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- STATS -->
+
+      <div class="about-stats">
+
+        <div class="stat-item">
+
+          <span class="stat-number">
+            02+
+          </span>
+
+          <span class="stat-label">
+            YEARS
+            <br />
+            LEARNING
+          </span>
+
+        </div>
+
+
+        <div class="stat-item">
+
+          <span class="stat-number">
+            08.0
+          </span>
+
+          <span class="stat-label">
+            CURRENT
+            <br />
+            CGPA
+          </span>
+
+        </div>
+
+
+        <div class="stat-item">
+
+          <span class="stat-number">
+            ∞
+          </span>
+
+          <span class="stat-label">
+            IDEAS
+            <br />
+            TO BUILD
+          </span>
+
+        </div>
+
+
+        <div class="stat-item">
+
+          <span class="stat-number">
+            2026
+          </span>
+
+          <span class="stat-label">
+            CURRENT
+            <br />
+            CHAPTER
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- DIGITAL DNA -->
+
+      <div class="dna-section">
+
+        <div class="dna-header">
+
+          <div>
+
+            <span class="small-label">
+              01 — MY DIGITAL DNA
+            </span>
+
+            <h3>
+              WHAT
+              <br />
+              DRIVES ME.
+            </h3>
+
+          </div>
+
+
+          <p>
+
+            A constantly evolving combination of
+            technology, curiosity and problem solving.
+
+          </p>
+
+        </div>
+
+
+        <div class="dna-list">
+
+
+          <article
+            class="dna-item active"
+            data-dna="ai"
+          >
+
+            <div class="dna-item-number">
+              01
+            </div>
+
+
+            <div class="dna-item-main">
+
+              <h4>
+                ARTIFICIAL
+                <br />
+                INTELLIGENCE
+              </h4>
+
+
+              <p class="dna-item-description">
+
+                Exploring machine learning, computer
+                vision and intelligent systems that
+                turn data into useful decisions.
+
+              </p>
+
+            </div>
+
+
+            <div class="dna-item-arrow">
+              ↗
+            </div>
+
+          </article>
+
+
+          <article
+            class="dna-item"
+            data-dna="development"
+          >
+
+            <div class="dna-item-number">
+              02
+            </div>
+
+
+            <div class="dna-item-main">
+
+              <h4>
+                DEVELOPMENT
+              </h4>
+
+
+              <p class="dna-item-description">
+
+                Building clean, responsive and useful
+                interfaces while understanding the
+                systems behind them.
+
+              </p>
+
+            </div>
+
+
+            <div class="dna-item-arrow">
+              ↗
+            </div>
+
+          </article>
+
+
+          <article
+            class="dna-item"
+            data-dna="problem-solving"
+          >
+
+            <div class="dna-item-number">
+              03
+            </div>
+
+
+            <div class="dna-item-main">
+
+              <h4>
+                PROBLEM
+                <br />
+                SOLVING
+              </h4>
+
+
+              <p class="dna-item-description">
+
+                Breaking complex problems into smaller
+                pieces and finding practical ways to
+                solve them.
+
+              </p>
+
+            </div>
+
+
+            <div class="dna-item-arrow">
+              ↗
+            </div>
+
+          </article>
+
+
+          <article
+            class="dna-item"
+            data-dna="creativity"
+          >
+
+            <div class="dna-item-number">
+              04
+            </div>
+
+
+            <div class="dna-item-main">
+
+              <h4>
+                CREATIVITY
+              </h4>
+
+
+              <p class="dna-item-description">
+
+                Looking beyond functionality to create
+                experiences that feel thoughtful,
+                intuitive and memorable.
+
+              </p>
+
+            </div>
+
+
+            <div class="dna-item-arrow">
+              ↗
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         JOURNEY
+    =================================================== -->
+
+    <section
+      class="journey-section"
+      id="journey"
+    >
+
+      <div class="section-header">
+
+        <span>
+          02
+        </span>
+
+        <span>
+          MY JOURNEY
+        </span>
+
+      </div>
+
+
+      <div class="journey-intro">
+
+        <div>
+
+          <span class="small-label">
+            A WORK IN PROGRESS
+          </span>
+
+          <h2>
+            STILL
+            <br />
+            <span>BECOMING.</span>
+          </h2>
+
+        </div>
+
+
+        <p>
+
+          Every project, every bug and every new
+          concept adds another piece to the story.
+
+        </p>
+
+      </div>
+
+
+      <!-- JOURNEY TRACK -->
+
+      <div class="journey-track">
+
+
+        <!-- 2023 -->
+
+        <article class="journey-card">
+
+          <div class="journey-card-top">
+
+            <span>
+              01
+            </span>
+
+            <span>
+              2023
+            </span>
+
+          </div>
+
+
+          <div class="journey-card-content">
+
+            <span class="journey-year">
+              2023
+            </span>
+
+
+            <h3>
+              THE
+              <br />
+              BEGINNING.
+            </h3>
+
+
+            <p>
+
+              Started exploring programming and
+              discovered the world behind the
+              screen.
+
+            </p>
+
+          </div>
+
+
+          <div class="journey-card-bottom">
+
+            <span>
+              CHAPTER 01
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- 2024 -->
+
+        <article class="journey-card">
+
+          <div class="journey-card-top">
+
+            <span>
+              02
+            </span>
+
+            <span>
+              2024
+            </span>
+
+          </div>
+
+
+          <div class="journey-card-content">
+
+            <span class="journey-year">
+              2024
+            </span>
+
+
+            <h3>
+              LEARN.
+              <br />
+              EXPERIMENT.
+            </h3>
+
+
+            <p>
+
+              Started building projects, learning
+              development fundamentals and
+              understanding how software comes
+              together.
+
+            </p>
+
+          </div>
+
+
+          <div class="journey-card-bottom">
+
+            <span>
+              CHAPTER 02
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- 2025 -->
+
+        <article class="journey-card">
+
+          <div class="journey-card-top">
+
+            <span>
+              03
+            </span>
+
+            <span>
+              2025
+            </span>
+
+          </div>
+
+
+          <div class="journey-card-content">
+
+            <span class="journey-year">
+              2025
+            </span>
+
+
+            <h3>
+              BUILD
+              <br />
+              SOMETHING.
+            </h3>
+
+
+            <p>
+
+              Moved deeper into AI, full-stack
+              development and collaborative
+              project building.
+
+            </p>
+
+          </div>
+
+
+          <div class="journey-card-bottom">
+
+            <span>
+              CHAPTER 03
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- 2026 -->
+
+        <article class="journey-card journey-current">
+
+          <div class="journey-card-top">
+
+            <span>
+              04
+            </span>
+
+            <span>
+              2026
+            </span>
+
+          </div>
+
+
+          <div class="journey-card-content">
+
+            <span class="journey-year">
+              2026
+            </span>
+
+
+            <h3>
+              BUILD
+              <br />
+              BIGGER.
+            </h3>
+
+
+            <p>
+
+              Creating more ambitious AI-powered
+              products while growing as a developer
+              and problem solver.
+
+            </p>
+
+          </div>
+
+
+          <div class="journey-card-bottom">
+
+            <span>
+              CURRENT CHAPTER
+            </span>
+
+            <span class="current-dot"></span>
+
+          </div>
+
+        </article>
+
+
+        <!-- FUTURE -->
+
+        <article class="journey-card journey-future">
+
+          <div class="journey-card-top">
+
+            <span>
+              05
+            </span>
+
+            <span>
+              NEXT
+            </span>
+
+          </div>
+
+
+          <div class="journey-card-content">
+
+            <span class="journey-year">
+              ?
+            </span>
+
+
+            <h3>
+              THE STORY
+              <br />
+              CONTINUES.
+            </h3>
+
+
+            <p>
+
+              There is still a lot left to learn,
+              build and discover.
+
+            </p>
+
+          </div>
+
+
+          <div class="journey-card-bottom">
+
+            <span>
+              CHAPTER 05
+            </span>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="journey-scroll-note">
+
+        <span class="scroll-line-small"></span>
+
+        <span>
+          DRAG / SCROLL TO EXPLORE
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         SKILLS
+    =================================================== -->
+
+    <section
+      class="skills-section"
+      id="skills"
+    >
+
+      <div class="section-header">
+
+        <span>
+          03
+        </span>
+
+        <span>
+          WHAT I WORK WITH
+        </span>
+
+      </div>
+
+
+      <div class="skills-intro">
+
+        <span class="small-label">
+          TOOLS / TECHNOLOGIES / CURIOSITY
+        </span>
+
+
+        <h2>
+          THE
+          <br />
+          <span>TOOLBOX.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="skills-list">
+
+
+        <!-- FRONTEND -->
+
+        <article
+          class="skill-category active"
+          data-skill="frontend"
+        >
+
+          <div class="skill-number">
+            01
+          </div>
+
+
+          <div class="skill-main">
+
+            <h3>
+              FRONTEND
+            </h3>
+
+
+            <div class="skill-tags">
+
+              <span>
+                HTML
+              </span>
+
+              <span>
+                CSS
+              </span>
+
+              <span>
+                JavaScript
+              </span>
+
+              <span>
+                React
+              </span>
+
+              <span>
+                Tailwind CSS
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-arrow">
+            ↗
+          </div>
+
+        </article>
+
+
+        <!-- PROGRAMMING -->
+
+        <article
+          class="skill-category"
+          data-skill="programming"
+        >
+
+          <div class="skill-number">
+            02
+          </div>
+
+
+          <div class="skill-main">
+
+            <h3>
+              PROGRAMMING
+            </h3>
+
+
+            <div class="skill-tags">
+
+              <span>
+                Java
+              </span>
+
+              <span>
+                Python
+              </span>
+
+              <span>
+                Data Structures
+              </span>
+
+              <span>
+                OOP
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-arrow">
+            ↗
+          </div>
+
+        </article>
+
+
+        <!-- AI DATA -->
+
+        <article
+          class="skill-category"
+          data-skill="ai"
+        >
+
+          <div class="skill-number">
+            03
+          </div>
+
+
+          <div class="skill-main">
+
+            <h3>
+              AI / DATA
+            </h3>
+
+
+            <div class="skill-tags">
+
+              <span>
+                Machine Learning
+              </span>
+
+              <span>
+                Computer Vision
+              </span>
+
+              <span>
+                Pandas
+              </span>
+
+              <span>
+                OpenCV
+              </span>
+
+              <span>
+                Scikit-learn
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-arrow">
+            ↗
+          </div>
+
+        </article>
+
+
+        <!-- BACKEND -->
+
+        <article
+          class="skill-category"
+          data-skill="backend"
+        >
+
+          <div class="skill-number">
+            04
+          </div>
+
+
+          <div class="skill-main">
+
+            <h3>
+              BACKEND
+            </h3>
+
+
+            <div class="skill-tags">
+
+              <span>
+                FastAPI
+              </span>
+
+              <span>
+                REST APIs
+              </span>
+
+              <span>
+                PostgreSQL
+              </span>
+
+              <span>
+                MongoDB
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-arrow">
+            ↗
+          </div>
+
+        </article>
+
+
+        <!-- TOOLS -->
+
+        <article
+          class="skill-category"
+          data-skill="tools"
+        >
+
+          <div class="skill-number">
+            05
+          </div>
+
+
+          <div class="skill-main">
+
+            <h3>
+              TOOLS
+            </h3>
+
+
+            <div class="skill-tags">
+
+              <span>
+                Git
+              </span>
+
+              <span>
+                GitHub
+              </span>
+
+              <span>
+                Docker
+              </span>
+
+              <span>
+                VS Code
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-arrow">
+            ↗
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="skills-footer">
+
+        <span>
+          ALWAYS LEARNING
+        </span>
+
+        <span>
+          ALWAYS BUILDING
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PROJECTS
+    =================================================== -->
+
+    <section
+      class="projects-preview"
+      id="projects"
+    >
+
+      <div class="section-header">
+
+        <span>
+          04
+        </span>
+
+        <span>
+          SELECTED WORK
+        </span>
+
+      </div>
+
+
+      <div class="projects-heading">
+
+        <span class="small-label">
+          THINGS I'VE BUILT
+        </span>
+
+        <h2>
+          SELECTED
+          <br />
+          <span>WORK.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="project-card">
+
+
+        <div class="project-card-top">
+
+          <span>
+            PROJECT / 01
+          </span>
+
+          <span>
+            2026
+          </span>
+
+        </div>
+
+
+        <div class="project-card-content">
+
+          <div>
+
+            <p class="project-category">
+              AI · COMPUTER VISION · FULL STACK
+            </p>
+
+
+            <h2>
+              AI
+              <br />
+              WAREHOUSE
+            </h2>
+
+          </div>
+
+
+          <div class="project-card-arrow magnetic">
+            ↗
+          </div>
+
+        </div>
+
+
+        <div class="project-card-bottom">
+
+          <span>
+            DIGITAL TWIN
+          </span>
+
+          <span>
+            EXPLORE PROJECT
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SECOND PROJECT -->
+
+      <div class="project-card project-card-secondary">
+
+
+        <div class="project-card-top">
+
+          <span>
+            PROJECT / 02
+          </span>
+
+          <span>
+            2026
+          </span>
+
+        </div>
+
+
+        <div class="project-card-content">
+
+          <div>
+
+            <p class="project-category">
+              AI · MERCHANT INTELLIGENCE
+            </p>
+
+
+            <h2>
+              RAZORMATE
+              <br />
+              AI
+            </h2>
+
+          </div>
+
+
+          <div class="project-card-arrow magnetic">
+            ↗
+          </div>
+
+        </div>
+
+
+        <div class="project-card-bottom">
+
+          <span>
+            MERCHANT COPILOT
+          </span>
+
+          <span>
+            EXPLORE PROJECT
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         CONTACT
+    =================================================== -->
+
+    <section
+      class="contact-preview"
+      id="contact"
+    >
+
+      <div class="section-header">
+
+        <span>
+          05
+        </span>
+
+        <span>
+          CONTACT
+        </span>
+
+      </div>
+
+
+      <div class="contact-content">
+
+        <p class="contact-label">
+          HAVE AN IDEA?
+        </p>
+
+
+        <h2>
+
+          LET'S
+
+          <br />
+
+          <span>
+            BUILD.
+          </span>
+
+        </h2>
+
+
+        <a
+          href="mailto:hello@example.com"
+          class="contact-button magnetic"
+        >
+
+          <span>
+            GET IN TOUCH
+          </span>
+
+          <span>
+            ↗
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+
+  <footer class="footer">
+
+    <span>
+      © 2026 ANJALI
+    </span>
+
+
+    <span>
+      BUILT WITH CODE + CURIOSITY
+    </span>
+
+
+    <span>
+      INDIA
+    </span>
+
+  </footer>
+
+
+  <!-- ==================================================
+       SCRIPT
+  =================================================== -->
+
+  <script src="./js/script.js"></script>
+
+</body>
+
 </html>
